@@ -16,16 +16,24 @@ public class PersonDao {
 	EntityManager em = null;
 	EntityTransaction tx = null;
 
-	public void addAPerson(Person person) {
-		emf = Persistence.createEntityManagerFactory("pu");
-		em = emf.createEntityManager();
-		tx = em.getTransaction();
-		tx.begin();
-		em.persist(person); // adds new record in DB table
-		tx.commit();
-	}
+//	public void addAPerson(Person person) {
+//		emf = Persistence.createEntityManagerFactory("pu");
+//		em = emf.createEntityManager();
+//		tx = em.getTransaction();
+//		tx.begin();
+//		em.persist(person); // adds new record in DB table
+//		tx.commit();
+//	}
 
-	public void updateAPerson(Person person) {
+//	public void addOrUpdateAPerson(Person person) {
+//		emf = Persistence.createEntityManagerFactory("pu");
+//		em = emf.createEntityManager();
+//		tx = em.getTransaction();
+//		tx.begin();
+//		em.persist(person); // adds or update record in DB table
+//		tx.commit();
+//	}
+	public void addOrUpdateAPerson(Person person) {
 		emf = Persistence.createEntityManagerFactory("pu");
 		em = emf.createEntityManager();
 		tx = em.getTransaction();
